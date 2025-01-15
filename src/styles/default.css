@@ -1,0 +1,355 @@
+@font-face {
+  font-family: "Poppins";
+  src: url("/fonts/poppins.ttf") format("truetype");
+}
+
+body {
+  background: #f5f7f9;
+  font-family: "Poppins", sans-serif;
+}
+
+h1 {
+  font-size: 36px;
+}
+
+h2 {
+  font-size: 30px;
+}
+
+h3 {
+  font-size: 24px;
+}
+
+h5 {
+  font-size: 20px;
+}
+
+hr{
+  border-top-width: 1px;
+  color: inherit;
+  height: 0;
+}
+
+/* .header {
+  top: 0;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px 43px;
+  background: #fff; 
+  align-items: center;
+  z-index: 50;
+  position: -webkit-sticky;
+  position: sticky;
+  justify-content: space-between;
+} */
+
+
+.app-container {
+  width: 100%;
+  height: calc(100vh - 81px);
+}
+
+.custom-input-field-container {
+  position: relative;
+}
+
+.custom-input-field-container>label {
+  top: -10px;
+  left: 8px;
+  font-size: 13px;
+  padding: 0 2px;
+  position: absolute;
+  background: #fff;
+  z-index: 1;
+}
+
+.primary-blue-button {
+  background-color: #1b77f2;
+  border-radius: 8px;
+  padding: 10px 18px;
+  font-weight: 500;
+  line-height: 21px;
+  color: #fff;
+  border: none;
+  user-select: none;
+}
+
+.primary-blue-background {
+  background-color: #1b77f2;
+  color: #fff;
+}
+
+.text-primary-blue {
+  color: #1b77f2;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+/* Sign in screen flex card layout */
+.signin-screen-card-container {
+  margin: auto;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1300px;
+  justify-content: space-between;
+}
+
+.signin-card {
+  width: 550px;
+  height: 429px;
+  border: none;
+  border-radius: 2em;
+}
+
+.signin-card .content {
+  display: flex;
+  height: inherit;
+  padding: 0 30px;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.signin-card form {
+  align-self: flex-start;
+  width: 100%;
+}
+
+@media (max-width: 1101px) {
+  .signin-screen-card-container {
+    justify-content: center;
+  }
+
+  .signin-screen-card-container .signin-card {
+    margin: 10px 0;
+  }
+}
+
+/* Password Recovery Screen */
+.password-recovery-container {
+  width: 100%;
+  padding: 2% 0;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  height: calc(100% - 81px);
+}
+
+.password-recovery-container .card {
+  padding: 1.5em;
+  width: 500px;
+  margin: auto;
+  height: auto;
+  background: #fff;
+  border-radius: 2em;
+}
+
+/* Signup Screen */
+.signup-screen-container {
+  width: 100%;
+  padding: 2% 0;
+  display: flex;
+  position: absolute;
+  align-items: center;
+  height: calc(100% - 81px);
+}
+
+.signup-screen-container .card {
+  padding: 1.5em;
+  width: 500px;
+  margin: auto;
+  height: auto;
+  background: #fff;
+  border-radius: 2em;
+}
+
+.custom-spaced-grid .w3-col {
+  margin: 8px 0;
+}
+
+/* App layout */
+
+.sidebar {
+  left: 0;
+  width: 246px;
+  background: white;
+  position: fixed;
+  overflow-y: auto;
+  height: 100%;
+  user-select: none;
+}
+
+.settings-sidebar {
+  position: sticky;
+  top: 5.7rem;
+  max-height: calc(100vh - 7.2rem);
+  overflow-y: auto;
+  background-color: white;
+  border-radius: 10px;
+  width: 246px;
+  user-select: none;
+}
+
+.app-settings-content-area {
+  height: 100%;
+  overflow-y: auto;
+  /* margin-left: 247px; */
+  width: calc(100% - 246px);
+}
+
+.app-content-area {
+  min-height: calc(100vh - 25rem);
+  overflow-y: auto;
+}
+
+.sidebar-link {
+  display: flex;
+  color: grey;
+  cursor: pointer;
+  align-items: center;
+  padding: 15px 30px;
+}
+
+.sidebar-link
+
+.header
+.active {
+  color: #04aa6d;
+  background-color: #ecf7ef;
+  /* border-left: 3px solid #04aa6d; */
+}
+
+.sub-route {
+  padding: 10px 30px;
+  font-size: 14px;
+  cursor: pointer;
+  color: grey;
+  transition: height 0.3s ease, padding 0.3s ease;
+}
+
+.screen-content {
+  padding: 25px;
+}
+
+@media screen and (max-width: 786px) {
+  .sidebar, .settings-sidebar {
+    display: none;
+    left: -200px;
+  }
+
+  .list-table-container {
+    overflow-x: auto;
+  }
+
+  .app-content-area, .app-settings-content-area {
+    margin: 0;
+    width: 100%;
+  }
+}
+
+/* Listing view */
+
+.react-table-lite-table {
+  font-family: "Poppins", sans-serif !important;
+}
+
+.react-table-lite-container {
+  min-width: 600px;
+}
+
+.list-table-container {
+  overflow-x: auto;
+}
+
+.error-field>label {
+  color: rgb(220, 50, 10) !important;
+}
+
+.error-field input,
+.error-field textarea,
+.error-field select,
+.error-field .rsw-ce {
+  border-color: rgb(220, 50, 10) !important;
+}
+
+.modal-open .ReactModal__Content {
+  outline: none;
+}
+
+.error-field input:focus-visible {
+  outline: 1px solid rgb(250, 190, 190);
+}
+
+.rsw-ce {
+  border: 1px solid transparent;
+}
+
+.error-field__control {
+  border: none !important;
+  box-shadow: 0 0 0 1.2px rgb(220, 50, 10) !important;
+}
+
+.error-field__control--is-focused {
+  border: none !important;
+  box-shadow: 0 0 0 1.5px rgb(220, 50, 10) !important;
+}
+
+.react-table-lite-pagination-item{
+  margin: 3px;
+}
+
+.react-table-lite-pagination-active-item{
+  color: #FFF;
+  border-radius: 5px;
+  background: #1b77f2;
+  padding: 0.2em 0.5em !important;
+}
+.react-table-lite-pagination-container {
+  margin-top: 15px;
+  margin-bottom: 15px;
+} 
+.select-custom-style__control  {
+  min-height: 42px !important;
+}
+
+.multi-select__multi-value,
+.multi-select__multi-value div {
+  background-color: #1b77F2 !important;
+  color: #FFF !important;
+}
+
+/* custom transparent select */
+.custom-transparent-select__control {
+  background-color: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+  color: #ffffff !important;
+}
+
+.custom-transparent-select__menu {
+  color: #000000 !important;
+}
+
+.custom-transparent-select__single-value {
+  color: #ffffff !important;
+}
+
+.custom-transparent-select__placeholder {
+  color: #ffffff !important;
+}
+
+.custom-transparent-select__indicator-separator {
+  display: none;
+}
+
+.custom-transparent-select__indicator {
+  color: #ffffff !important;
+}
+
+.custom-transparent-select__dropdown-indicator {
+  color: #ffffff !important;
+}
